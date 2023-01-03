@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Street Fighter</title>
+</head>
+<body>
+    <header>
+        <div class="player1">
+            <div class="health-bar plyer1-health-bar"></div>
+          <span class="health-bar plyer1-health">Player 1</span>  
+        </div>
+        <div class="player2">
+            <div class="plyer2-health-bar"></div>
+          <span class="plyer2-health">Player 2</span>  
+        </div>
+    </header>
+
+    <div class="fight-area">
+        <span class="action"></span>
+        <span class="player player1-action">🤜</span>
+        <span>VS</span>
+        <span class="player player2-action">🤛</span>
+    </div>
+    
+    <footer>
+        <button type="button" class="game-btn play-btn" data-option="Rock">
+            <span>Rock</span>
+        </button>
+        <button type="button" class="game-btn play-btn" data-option="Paper">
+            <span>Paper</span>
+        </button>
+        <button type="button" class="game-btn play-btn" data-option="Scissors">
+            <span>Scissors</span>
+        </button>
+        <button type="button" class="game-btn reset-btn">
+            <span>Reset</span>
+        </button>
+        <button type="button" class="game-btn map-btn">
+            <span>Change Map</span>
+        </button>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
