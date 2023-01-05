@@ -5,6 +5,12 @@ const player1HealthElement = document.querySelector(".player-1-health-bar");
 const player2HealthElement = document.querySelector(".player-2-health-bar");
 const playBtn = document.querySelectorAll(".play-btn");
 const resetBtn = document.querySelector(".reset-btn");
+const startBtn = document.querySelector(".start-btn")
+const mapBtn = document.querySelector(".map-btn")
+const startContainer = document.querySelector(".start")
+const gameContainer = document.querySelector(".game")
+var audio = new Audio("sounds/5.mp3");
+
 let player1Health;
 let player2Health;
 let player2Option;
@@ -13,7 +19,30 @@ let isGameOver;
 const updateData = (element, message) => {
     element.textContent = message;
 };
-
+startBtn.addEventListener("click",() => {
+    audio.play();
+    startContainer.classList.add("hidden")
+    gameContainer.classList.remove("hidden")
+})
+let map = 1
+mapBtn.addEventListener("click",() => {
+    init();
+    if (map === 5) {
+        gameContainer.classList.remove(`map${map}`)
+        console.log(`map${map}`)
+        map = 1;
+        gameContainer.classList.add(`map${map}`)
+    } else {
+        gameContainer.classList.remove(`map${map}`)
+        console.log(`map${map}`)
+        map++;
+        gameContainer.classList.add(`map${map}`)
+        console.log(`map${map}`)
+    }
+    
+    
+    
+})
 const init = () => {
     player1Health = 100;
     player2Health = 100;
@@ -80,7 +109,7 @@ playBtn.forEach((e) => {
                     player1Health -= 20;
                     player1HealthElement.style.width = `${player1Health}%`;
                 } else {
-                    updateData(gameMessageElement, "Player 1 hit (+1)");
+                    updateData(gameMessageElement, "You hit (+1)");
                     player2Health -= 20;
                     player2HealthElement.style.width = `${player2Health}%`;
                 }
@@ -93,7 +122,7 @@ playBtn.forEach((e) => {
                     player1Health -= 20;
                     player1HealthElement.style.width = `${player1Health}%`;
                 } else {
-                    updateData(gameMessageElement, "Player 1 hit (+1)");
+                    updateData(gameMessageElement, "You hit (+1)");
                     player2Health -= 20;
                     player2HealthElement.style.width = `${player2Health}%`;
                 }
@@ -106,7 +135,7 @@ playBtn.forEach((e) => {
                     player1Health -= 20;
                     player1HealthElement.style.width = `${player1Health}%`;
                 } else {
-                    updateData(gameMessageElement, "Player 1 hit (+1)");
+                    updateData(gameMessageElement, "You hit (+1)");
                     player2Health -= 20;
                     player2HealthElement.style.width = `${player2Health}%`;
                 }

@@ -13,13 +13,15 @@ body {
     place-items: center;
     height: 100vh;
 }
-img{
+
+img {
     top: 0;
     left: 0;
     position: absolute;
     width: 100vw;
     height: 100vh;
 }
+
 .game {
     width: 100%;
     height: 100%;
@@ -27,6 +29,7 @@ img{
     display: grid;
     grid-template-rows: min-content 1fr min-content;
     text-transform: uppercase;
+    transition: 1s ease;
 }
 
 .game header {
@@ -77,16 +80,17 @@ img{
     top: 0;
     translate: 0 75px;
     transform: skewX(-25deg);
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.8);
     color: #000;
-    padding: 5px 20px;
+    padding: 10px 20px;
     border: 2px solid #000;
+    font-size: 25px;
 }
 
 .message {
     display: inline-block;
     transform: skewX(25deg);
-    font-size: 14px;
+    font-size: 20px;
 }
 
 .player {
@@ -125,12 +129,14 @@ img{
 .reset-btn {
     margin-left: auto;
 }
-.start-btn{
+
+.start-btn {
     position: absolute;
     top: 79%;
     left: 46%;
     width: 180px;
 }
+
 .map1 {
     background: url(img/Map1.webp) bottom no-repeat;
     background-size: cover;
@@ -155,6 +161,7 @@ img{
     background: url(img/Map5.webp) bottom no-repeat;
     background-size: cover;
 }
-.hidden{
+
+.hidden {
     display: none;
 }
