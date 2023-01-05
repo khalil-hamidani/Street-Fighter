@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,42 +8,61 @@
     <link rel="stylesheet" href="styles.css">
     <title>Street Fighter</title>
 </head>
-<body>
-    <header>
-        <div class="player1">
-            <div class="health-bar plyer1-health-bar"></div>
-          <span class="health-bar plyer1-health">Player 1</span>  
-        </div>
-        <div class="player2">
-            <div class="plyer2-health-bar"></div>
-          <span class="plyer2-health">Player 2</span>  
-        </div>
-    </header>
 
-    <div class="fight-area">
-        <span class="action"></span>
-        <span class="player player1-action">🤜</span>
-        <span>VS</span>
-        <span class="player player2-action">🤛</span>
-    </div>
-    
-    <footer>
-        <button type="button" class="game-btn play-btn" data-option="Rock">
-            <span>Rock</span>
+<body>
+    <section class="start">
+        <img src="img/start.png" alt="start">
+        <button type="button" class="game-btn start-btn">
+            <span>Start</span>
         </button>
-        <button type="button" class="game-btn play-btn" data-option="Paper">
-            <span>Paper</span>
-        </button>
-        <button type="button" class="game-btn play-btn" data-option="Scissors">
-            <span>Scissors</span>
-        </button>
-        <button type="button" class="game-btn reset-btn">
-            <span>Reset</span>
-        </button>
-        <button type="button" class="game-btn map-btn">
-            <span>Change Map</span>
-        </button>
-    </footer>
+    </section>
+    <section class="game map1 hidden">
+        <header>
+            <div class="player-health">
+                <div class="player-health-bar player-1-health-bar"></div>
+                <span>Player 1</span>
+            </div>
+            <div class="timer">
+                <span>60</span>
+            </div>
+            <div class="player-health">
+                <div class="player-health-bar player-2-health-bar"></div>
+                <span class="player-health-2">Player 2</span>
+            </div>
+        </header>
+        <div class="main">
+            <div class="game-feedback">
+                <span class="message"></span>
+            </div>
+            <div>
+                <span class="player player-1">🤜</span>
+            </div>
+            <div>
+                <span>VS</span>
+            </div>
+            <div>
+                <span class="player player-2">🤛</span>
+            </div>
+        </div>
+        <footer>
+            <button type="button" class="game-btn play-btn" data-option="Rock">
+                <span>Rock</span>
+            </button>
+            <button type="button" class="game-btn play-btn" data-option="Paper">
+                <span>Paper</span>
+            </button>
+            <button type="button" class="game-btn play-btn" data-option="Scissors">
+                <span>Scissors</span>
+            </button>
+            <button type="button" class="game-btn reset-btn">
+                <span>Reset</span>
+            </button>
+            <button type="button" class="game-btn reset-btn">
+                <span>Change map</span>
+            </button>
+        </footer>
+    </section>
     <script src="app.js"></script>
 </body>
+
 </html>
