@@ -14,11 +14,11 @@ The game has a Street Fighter theme, with a background image of the iconic Stree
 
 ## overview :
 
-| <img src="img/1.png" width="800"> |
+ <img src="img/1.png" width="800"> 
 
-| <img src="img/2.png" width="800"> |
+ <img src="img/2.png" width="800"> 
 
-| <img src="img/3.png" width="800"> |
+ <img src="img/3.png" width="800"> 
 
 ## Conclusion
 This Street Fighter themed rock-paper-scissors game provides an enjoyable and interactive experience for fans of the series. The game has been written using HTML, CSS, and JavaScript, and features a themed interface and game play mechanics. Players can enjoy the classic rock-paper-scissors game with a unique twist, while immersing themselves in the world of Street Fighter.
