@@ -14,13 +14,10 @@ The game has a Street Fighter theme, with a background image of the iconic Stree
 
 ## overview :
 
-| :---------------------------------------------: |
 | <img src="img/1.png" width="800"> |
 
-| :---------------------------------------------: |
 | <img src="img/2.png" width="800"> |
 
-| :---------------------------------------------: |
 | <img src="img/3.png" width="800"> |
 
 ## Conclusion
