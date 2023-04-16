@@ -1,6 +1,6 @@
 # Street Fighter Rock-Paper-Scissors Game
 This is a mini rock-paper-scissors game with a Street Fighter theme. The game has been written using HTML, CSS, and JavaScript. Players can choose their move by clicking on one of three icons representing rock, paper, or scissors, and play against the computer.
-
+[Try it out](khalil-hamidani.github.io/Street-Fighter/)
 ## Game Play
 Players choose their move by clicking on one of three icons representing rock, paper, or scissors. The computer then randomly selects its move. The game logic then determines the winner based on the traditional rock-paper-scissors rules:
 
